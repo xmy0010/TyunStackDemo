@@ -1,0 +1,903 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A048E0D26DF6B07004297AD /* BaiduTraceSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A65295026DC76F70013EC39 /* BaiduTraceSDK.framework */; };
+		4A048E0E26DF6B07004297AD /* BaiduTraceSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A65295026DC76F70013EC39 /* BaiduTraceSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4A048E1326E1AEB8004297AD /* ShowColorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A048E1126E1AEB8004297AD /* ShowColorController.m */; };
+		4A048E1426E1AEB8004297AD /* ShowColorController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A048E1226E1AEB8004297AD /* ShowColorController.xib */; };
+		4A048E2126E5AADA004297AD /* WebController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A048E1E26E5AADA004297AD /* WebController.xib */; };
+		4A048E2226E5AADA004297AD /* WebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A048E2026E5AADA004297AD /* WebController.m */; };
+		4A06F7BF1E0CC8D30057261D /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A06F7BE1E0CC8D30057261D /* Person.m */; };
+		4A1461401F69323600760BE6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A14613F1F69323600760BE6 /* MapKit.framework */; };
+		4A190AA71DE2A3C3008A9297 /* UIView+XMYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A190AA51DE2A3C3008A9297 /* UIView+XMYExtension.m */; };
+		4A24600A2289630E00B34F6C /* XMYTestTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A2460092289630E00B34F6C /* XMYTestTableVC.m */; };
+		4A260DE41F568E3500AB4CAD /* BaseWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A260DE31F568E3500AB4CAD /* BaseWebViewController.m */; };
+		4A2E90911E2DECCD00D34FE2 /* db_fo_dic.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 4A2E90901E2DECCD00D34FE2 /* db_fo_dic.sqlite */; };
+		4A40C6B52701C229006A6B2B /* NullSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A40C6B42701C229006A6B2B /* NullSafe.m */; };
+		4A491864216DD3560048599E /* XMYSon.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A491863216DD3560048599E /* XMYSon.m */; };
+		4A86A62F1FCEA9830094F772 /* TYTest1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A86A62E1FCEA9830094F772 /* TYTest1ViewController.m */; };
+		4A86A6331FCEA9DA0094F772 /* TYTest2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A86A6311FCEA9DA0094F772 /* TYTest2ViewController.m */; };
+		4AB83F9E26F1D76F00DCB007 /* GlobalValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB83F9D26F1D76F00DCB007 /* GlobalValue.m */; };
+		4AC549241E763D4B006ACE86 /* TYNetWorking.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC549231E763D4B006ACE86 /* TYNetWorking.m */; };
+		4AC549271E763FED006ACE86 /* NSString+TYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC549261E763FED006ACE86 /* NSString+TYExtension.m */; };
+		4AC5492C1E76618A006ACE86 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC5492A1E76618A006ACE86 /* GTMBase64.m */; };
+		4AC551151DD1DBDD00620A07 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC551141DD1DBDD00620A07 /* main.m */; };
+		4AC551181DD1DBDD00620A07 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC551171DD1DBDD00620A07 /* AppDelegate.m */; };
+		4AC5511B1DD1DBDD00620A07 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC5511A1DD1DBDD00620A07 /* ViewController.m */; };
+		4AC5511E1DD1DBDD00620A07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AC5511C1DD1DBDD00620A07 /* Main.storyboard */; };
+		4AC551201DD1DBDD00620A07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AC5511F1DD1DBDD00620A07 /* Assets.xcassets */; };
+		4AC551231DD1DBDD00620A07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AC551211DD1DBDD00620A07 /* LaunchScreen.storyboard */; };
+		4AC5512E1DD1DBDD00620A07 /* TyunStackDemosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC5512D1DD1DBDD00620A07 /* TyunStackDemosTests.m */; };
+		4AC551391DD1DBDD00620A07 /* TyunStackDemosUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC551381DD1DBDD00620A07 /* TyunStackDemosUITests.m */; };
+		4AF0FA4D1E27518B007294C5 /* AnimOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF0FA481E27518B007294C5 /* AnimOperation.m */; };
+		4AF0FA4F1E27518B007294C5 /* MYAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF0FA4C1E27518B007294C5 /* MYAnimationView.m */; };
+		4AF7C9841FEA2A4E001DF6BF /* TYQuickLookController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF7C9831FEA2A4E001DF6BF /* TYQuickLookController.m */; };
+		4AF7C9871FEA3256001DF6BF /* TYCusQuickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF7C9861FEA3256001DF6BF /* TYCusQuickViewController.m */; };
+		94EB70B5CB1B757B50A7FCD6 /* libPods-TyunStackDemos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57630E44A2F5FA38F7E54BF2 /* libPods-TyunStackDemos.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4AC5512A1DD1DBDD00620A07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4AC551081DD1DBDD00620A07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4AC5510F1DD1DBDD00620A07;
+			remoteInfo = TyunStackDemos;
+		};
+		4AC551351DD1DBDD00620A07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4AC551081DD1DBDD00620A07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4AC5510F1DD1DBDD00620A07;
+			remoteInfo = TyunStackDemos;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4A14613E1F69304200760BE6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4A048E0E26DF6B07004297AD /* BaiduTraceSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		16D5094E7152649C25B1A644 /* Pods-TyunStackDemos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TyunStackDemos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TyunStackDemos/Pods-TyunStackDemos.debug.xcconfig"; sourceTree = "<group>"; };
+		4A048E1026E1AEB8004297AD /* ShowColorController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowColorController.h; sourceTree = "<group>"; };
+		4A048E1126E1AEB8004297AD /* ShowColorController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowColorController.m; sourceTree = "<group>"; };
+		4A048E1226E1AEB8004297AD /* ShowColorController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowColorController.xib; sourceTree = "<group>"; };
+		4A048E1E26E5AADA004297AD /* WebController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebController.xib; sourceTree = "<group>"; };
+		4A048E1F26E5AADA004297AD /* WebController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebController.h; sourceTree = "<group>"; };
+		4A048E2026E5AADA004297AD /* WebController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebController.m; sourceTree = "<group>"; };
+		4A06F7BD1E0CC8D30057261D /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		4A06F7BE1E0CC8D30057261D /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		4A14613F1F69323600760BE6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		4A190AA41DE2A3C3008A9297 /* UIView+XMYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XMYExtension.h"; sourceTree = "<group>"; };
+		4A190AA51DE2A3C3008A9297 /* UIView+XMYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XMYExtension.m"; sourceTree = "<group>"; };
+		4A2460082289630E00B34F6C /* XMYTestTableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMYTestTableVC.h; sourceTree = "<group>"; };
+		4A2460092289630E00B34F6C /* XMYTestTableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMYTestTableVC.m; sourceTree = "<group>"; };
+		4A260DE21F568E3500AB4CAD /* BaseWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseWebViewController.h; sourceTree = "<group>"; };
+		4A260DE31F568E3500AB4CAD /* BaseWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseWebViewController.m; sourceTree = "<group>"; };
+		4A2E90901E2DECCD00D34FE2 /* db_fo_dic.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = db_fo_dic.sqlite; sourceTree = "<group>"; };
+		4A40C6B42701C229006A6B2B /* NullSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NullSafe.m; sourceTree = "<group>"; };
+		4A491862216DD3560048599E /* XMYSon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMYSon.h; sourceTree = "<group>"; };
+		4A491863216DD3560048599E /* XMYSon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMYSon.m; sourceTree = "<group>"; };
+		4A65295026DC76F70013EC39 /* BaiduTraceSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduTraceSDK.framework; sourceTree = "<group>"; };
+		4A86A62D1FCEA9830094F772 /* TYTest1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYTest1ViewController.h; sourceTree = "<group>"; };
+		4A86A62E1FCEA9830094F772 /* TYTest1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYTest1ViewController.m; sourceTree = "<group>"; };
+		4A86A6301FCEA9DA0094F772 /* TYTest2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYTest2ViewController.h; sourceTree = "<group>"; };
+		4A86A6311FCEA9DA0094F772 /* TYTest2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYTest2ViewController.m; sourceTree = "<group>"; };
+		4AB83F9C26F1D76F00DCB007 /* GlobalValue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalValue.h; sourceTree = "<group>"; };
+		4AB83F9D26F1D76F00DCB007 /* GlobalValue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlobalValue.m; sourceTree = "<group>"; };
+		4AC549221E763D4B006ACE86 /* TYNetWorking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYNetWorking.h; sourceTree = "<group>"; };
+		4AC549231E763D4B006ACE86 /* TYNetWorking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYNetWorking.m; sourceTree = "<group>"; };
+		4AC549251E763FED006ACE86 /* NSString+TYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TYExtension.h"; sourceTree = "<group>"; };
+		4AC549261E763FED006ACE86 /* NSString+TYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TYExtension.m"; sourceTree = "<group>"; };
+		4AC549291E76618A006ACE86 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		4AC5492A1E76618A006ACE86 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		4AC5492B1E76618A006ACE86 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		4AC551101DD1DBDD00620A07 /* TyunStackDemos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TyunStackDemos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AC551141DD1DBDD00620A07 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4AC551161DD1DBDD00620A07 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4AC551171DD1DBDD00620A07 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4AC551191DD1DBDD00620A07 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4AC5511A1DD1DBDD00620A07 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4AC5511D1DD1DBDD00620A07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4AC5511F1DD1DBDD00620A07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4AC551221DD1DBDD00620A07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4AC551241DD1DBDD00620A07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AC551291DD1DBDD00620A07 /* TyunStackDemosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TyunStackDemosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AC5512D1DD1DBDD00620A07 /* TyunStackDemosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TyunStackDemosTests.m; sourceTree = "<group>"; };
+		4AC5512F1DD1DBDD00620A07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AC551341DD1DBDD00620A07 /* TyunStackDemosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TyunStackDemosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AC551381DD1DBDD00620A07 /* TyunStackDemosUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TyunStackDemosUITests.m; sourceTree = "<group>"; };
+		4AC5513A1DD1DBDD00620A07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AF0FA471E27518B007294C5 /* AnimOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimOperation.h; sourceTree = "<group>"; };
+		4AF0FA481E27518B007294C5 /* AnimOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimOperation.m; sourceTree = "<group>"; };
+		4AF0FA4B1E27518B007294C5 /* MYAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYAnimationView.h; sourceTree = "<group>"; };
+		4AF0FA4C1E27518B007294C5 /* MYAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYAnimationView.m; sourceTree = "<group>"; };
+		4AF7C9821FEA2A4E001DF6BF /* TYQuickLookController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYQuickLookController.h; sourceTree = "<group>"; };
+		4AF7C9831FEA2A4E001DF6BF /* TYQuickLookController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYQuickLookController.m; sourceTree = "<group>"; };
+		4AF7C9851FEA3256001DF6BF /* TYCusQuickViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYCusQuickViewController.h; sourceTree = "<group>"; };
+		4AF7C9861FEA3256001DF6BF /* TYCusQuickViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYCusQuickViewController.m; sourceTree = "<group>"; };
+		57630E44A2F5FA38F7E54BF2 /* libPods-TyunStackDemos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TyunStackDemos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E418A2D8FC47685DB199A36C /* Pods-TyunStackDemos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TyunStackDemos.release.xcconfig"; path = "Pods/Target Support Files/Pods-TyunStackDemos/Pods-TyunStackDemos.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4AC5510D1DD1DBDD00620A07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A048E0D26DF6B07004297AD /* BaiduTraceSDK.framework in Frameworks */,
+				94EB70B5CB1B757B50A7FCD6 /* libPods-TyunStackDemos.a in Frameworks */,
+				4A1461401F69323600760BE6 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AC551261DD1DBDD00620A07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AC551311DD1DBDD00620A07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A048E0F26E1AE85004297AD /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				4A048E1026E1AEB8004297AD /* ShowColorController.h */,
+				4A048E1126E1AEB8004297AD /* ShowColorController.m */,
+				4A048E1226E1AEB8004297AD /* ShowColorController.xib */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		4AC549281E76618A006ACE86 /* GTMBase64 */ = {
+			isa = PBXGroup;
+			children = (
+				4AC549291E76618A006ACE86 /* GTMBase64.h */,
+				4AC5492A1E76618A006ACE86 /* GTMBase64.m */,
+				4AC5492B1E76618A006ACE86 /* GTMDefines.h */,
+			);
+			path = GTMBase64;
+			sourceTree = "<group>";
+		};
+		4AC551071DD1DBDD00620A07 = {
+			isa = PBXGroup;
+			children = (
+				4AC551121DD1DBDD00620A07 /* TyunStackDemos */,
+				4AC5512C1DD1DBDD00620A07 /* TyunStackDemosTests */,
+				4AC551371DD1DBDD00620A07 /* TyunStackDemosUITests */,
+				4AC551111DD1DBDD00620A07 /* Products */,
+				D76A64259566DA9ED8039FAC /* Pods */,
+				B05CDF76FB453E419BE1BB9F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4AC551111DD1DBDD00620A07 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4AC551101DD1DBDD00620A07 /* TyunStackDemos.app */,
+				4AC551291DD1DBDD00620A07 /* TyunStackDemosTests.xctest */,
+				4AC551341DD1DBDD00620A07 /* TyunStackDemosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4AC551121DD1DBDD00620A07 /* TyunStackDemos */ = {
+			isa = PBXGroup;
+			children = (
+				4A048E0F26E1AE85004297AD /* New Group */,
+				4A65295026DC76F70013EC39 /* BaiduTraceSDK.framework */,
+				4AF7C9811FEA2A30001DF6BF /* 在线预览 */,
+				4AC549281E76618A006ACE86 /* GTMBase64 */,
+				4A2E90901E2DECCD00D34FE2 /* db_fo_dic.sqlite */,
+				4AF0FA3D1E272A9D007294C5 /* Animation */,
+				4A190AA41DE2A3C3008A9297 /* UIView+XMYExtension.h */,
+				4A190AA51DE2A3C3008A9297 /* UIView+XMYExtension.m */,
+				4AC551161DD1DBDD00620A07 /* AppDelegate.h */,
+				4AC551171DD1DBDD00620A07 /* AppDelegate.m */,
+				4AC551191DD1DBDD00620A07 /* ViewController.h */,
+				4AC5511A1DD1DBDD00620A07 /* ViewController.m */,
+				4AC5511C1DD1DBDD00620A07 /* Main.storyboard */,
+				4AC5511F1DD1DBDD00620A07 /* Assets.xcassets */,
+				4AC551211DD1DBDD00620A07 /* LaunchScreen.storyboard */,
+				4AC551241DD1DBDD00620A07 /* Info.plist */,
+				4AC551131DD1DBDD00620A07 /* Supporting Files */,
+				4A06F7BD1E0CC8D30057261D /* Person.h */,
+				4A06F7BE1E0CC8D30057261D /* Person.m */,
+				4AC549221E763D4B006ACE86 /* TYNetWorking.h */,
+				4AC549231E763D4B006ACE86 /* TYNetWorking.m */,
+				4AC549251E763FED006ACE86 /* NSString+TYExtension.h */,
+				4AC549261E763FED006ACE86 /* NSString+TYExtension.m */,
+				4A86A62D1FCEA9830094F772 /* TYTest1ViewController.h */,
+				4A86A62E1FCEA9830094F772 /* TYTest1ViewController.m */,
+				4A86A6301FCEA9DA0094F772 /* TYTest2ViewController.h */,
+				4A86A6311FCEA9DA0094F772 /* TYTest2ViewController.m */,
+				4A491862216DD3560048599E /* XMYSon.h */,
+				4A491863216DD3560048599E /* XMYSon.m */,
+				4A2460082289630E00B34F6C /* XMYTestTableVC.h */,
+				4A2460092289630E00B34F6C /* XMYTestTableVC.m */,
+				4AB83F9C26F1D76F00DCB007 /* GlobalValue.h */,
+				4AB83F9D26F1D76F00DCB007 /* GlobalValue.m */,
+			);
+			path = TyunStackDemos;
+			sourceTree = "<group>";
+		};
+		4AC551131DD1DBDD00620A07 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4AC551141DD1DBDD00620A07 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4AC5512C1DD1DBDD00620A07 /* TyunStackDemosTests */ = {
+			isa = PBXGroup;
+			children = (
+				4AC5512D1DD1DBDD00620A07 /* TyunStackDemosTests.m */,
+				4AC5512F1DD1DBDD00620A07 /* Info.plist */,
+			);
+			path = TyunStackDemosTests;
+			sourceTree = "<group>";
+		};
+		4AC551371DD1DBDD00620A07 /* TyunStackDemosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4AC551381DD1DBDD00620A07 /* TyunStackDemosUITests.m */,
+				4AC5513A1DD1DBDD00620A07 /* Info.plist */,
+			);
+			path = TyunStackDemosUITests;
+			sourceTree = "<group>";
+		};
+		4AF0FA3D1E272A9D007294C5 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				4A40C6B42701C229006A6B2B /* NullSafe.m */,
+				4A048E1F26E5AADA004297AD /* WebController.h */,
+				4A048E2026E5AADA004297AD /* WebController.m */,
+				4A048E1E26E5AADA004297AD /* WebController.xib */,
+				4A260DE21F568E3500AB4CAD /* BaseWebViewController.h */,
+				4A260DE31F568E3500AB4CAD /* BaseWebViewController.m */,
+				4AF0FA471E27518B007294C5 /* AnimOperation.h */,
+				4AF0FA481E27518B007294C5 /* AnimOperation.m */,
+				4AF0FA4B1E27518B007294C5 /* MYAnimationView.h */,
+				4AF0FA4C1E27518B007294C5 /* MYAnimationView.m */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		4AF7C9811FEA2A30001DF6BF /* 在线预览 */ = {
+			isa = PBXGroup;
+			children = (
+				4AF7C9821FEA2A4E001DF6BF /* TYQuickLookController.h */,
+				4AF7C9831FEA2A4E001DF6BF /* TYQuickLookController.m */,
+				4AF7C9851FEA3256001DF6BF /* TYCusQuickViewController.h */,
+				4AF7C9861FEA3256001DF6BF /* TYCusQuickViewController.m */,
+			);
+			path = "在线预览";
+			sourceTree = "<group>";
+		};
+		B05CDF76FB453E419BE1BB9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A14613F1F69323600760BE6 /* MapKit.framework */,
+				57630E44A2F5FA38F7E54BF2 /* libPods-TyunStackDemos.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D76A64259566DA9ED8039FAC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				16D5094E7152649C25B1A644 /* Pods-TyunStackDemos.debug.xcconfig */,
+				E418A2D8FC47685DB199A36C /* Pods-TyunStackDemos.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4AC5510F1DD1DBDD00620A07 /* TyunStackDemos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AC5513D1DD1DBDD00620A07 /* Build configuration list for PBXNativeTarget "TyunStackDemos" */;
+			buildPhases = (
+				AD32B725E3C753E410B63E25 /* [CP] Check Pods Manifest.lock */,
+				4AC5510C1DD1DBDD00620A07 /* Sources */,
+				4AC5510D1DD1DBDD00620A07 /* Frameworks */,
+				4AC5510E1DD1DBDD00620A07 /* Resources */,
+				6052881A62DE70337DFBC02E /* [CP] Copy Pods Resources */,
+				4A14613E1F69304200760BE6 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TyunStackDemos;
+			productName = TyunStackDemos;
+			productReference = 4AC551101DD1DBDD00620A07 /* TyunStackDemos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4AC551281DD1DBDD00620A07 /* TyunStackDemosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AC551401DD1DBDD00620A07 /* Build configuration list for PBXNativeTarget "TyunStackDemosTests" */;
+			buildPhases = (
+				4AC551251DD1DBDD00620A07 /* Sources */,
+				4AC551261DD1DBDD00620A07 /* Frameworks */,
+				4AC551271DD1DBDD00620A07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4AC5512B1DD1DBDD00620A07 /* PBXTargetDependency */,
+			);
+			name = TyunStackDemosTests;
+			productName = TyunStackDemosTests;
+			productReference = 4AC551291DD1DBDD00620A07 /* TyunStackDemosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4AC551331DD1DBDD00620A07 /* TyunStackDemosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AC551431DD1DBDD00620A07 /* Build configuration list for PBXNativeTarget "TyunStackDemosUITests" */;
+			buildPhases = (
+				4AC551301DD1DBDD00620A07 /* Sources */,
+				4AC551311DD1DBDD00620A07 /* Frameworks */,
+				4AC551321DD1DBDD00620A07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4AC551361DD1DBDD00620A07 /* PBXTargetDependency */,
+			);
+			name = TyunStackDemosUITests;
+			productName = TyunStackDemosUITests;
+			productReference = 4AC551341DD1DBDD00620A07 /* TyunStackDemosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4AC551081DD1DBDD00620A07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "优谱德";
+				TargetAttributes = {
+					4AC5510F1DD1DBDD00620A07 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = P7VM5F7Z6Z;
+						LastSwiftMigration = 0910;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					4AC551281DD1DBDD00620A07 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = P7VM5F7Z6Z;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4AC5510F1DD1DBDD00620A07;
+					};
+					4AC551331DD1DBDD00620A07 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = P7VM5F7Z6Z;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4AC5510F1DD1DBDD00620A07;
+					};
+				};
+			};
+			buildConfigurationList = 4AC5510B1DD1DBDD00620A07 /* Build configuration list for PBXProject "TyunStackDemos" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 4AC551071DD1DBDD00620A07;
+			productRefGroup = 4AC551111DD1DBDD00620A07 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4AC5510F1DD1DBDD00620A07 /* TyunStackDemos */,
+				4AC551281DD1DBDD00620A07 /* TyunStackDemosTests */,
+				4AC551331DD1DBDD00620A07 /* TyunStackDemosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4AC5510E1DD1DBDD00620A07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A048E1426E1AEB8004297AD /* ShowColorController.xib in Resources */,
+				4AC551231DD1DBDD00620A07 /* LaunchScreen.storyboard in Resources */,
+				4A048E2126E5AADA004297AD /* WebController.xib in Resources */,
+				4A2E90911E2DECCD00D34FE2 /* db_fo_dic.sqlite in Resources */,
+				4AC551201DD1DBDD00620A07 /* Assets.xcassets in Resources */,
+				4AC5511E1DD1DBDD00620A07 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AC551271DD1DBDD00620A07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AC551321DD1DBDD00620A07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6052881A62DE70337DFBC02E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TyunStackDemos/Pods-TyunStackDemos-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/QMUIKit/QMUIKit/QMUIResources/QMUIResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/QMUIResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TyunStackDemos/Pods-TyunStackDemos-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD32B725E3C753E410B63E25 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TyunStackDemos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4AC5510C1DD1DBDD00620A07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AC5511B1DD1DBDD00620A07 /* ViewController.m in Sources */,
+				4A491864216DD3560048599E /* XMYSon.m in Sources */,
+				4AF7C9841FEA2A4E001DF6BF /* TYQuickLookController.m in Sources */,
+				4AC549271E763FED006ACE86 /* NSString+TYExtension.m in Sources */,
+				4AC551181DD1DBDD00620A07 /* AppDelegate.m in Sources */,
+				4A40C6B52701C229006A6B2B /* NullSafe.m in Sources */,
+				4A06F7BF1E0CC8D30057261D /* Person.m in Sources */,
+				4AC551151DD1DBDD00620A07 /* main.m in Sources */,
+				4AF0FA4F1E27518B007294C5 /* MYAnimationView.m in Sources */,
+				4A048E1326E1AEB8004297AD /* ShowColorController.m in Sources */,
+				4A048E2226E5AADA004297AD /* WebController.m in Sources */,
+				4A86A6331FCEA9DA0094F772 /* TYTest2ViewController.m in Sources */,
+				4AF0FA4D1E27518B007294C5 /* AnimOperation.m in Sources */,
+				4AF7C9871FEA3256001DF6BF /* TYCusQuickViewController.m in Sources */,
+				4A24600A2289630E00B34F6C /* XMYTestTableVC.m in Sources */,
+				4AB83F9E26F1D76F00DCB007 /* GlobalValue.m in Sources */,
+				4A260DE41F568E3500AB4CAD /* BaseWebViewController.m in Sources */,
+				4AC5492C1E76618A006ACE86 /* GTMBase64.m in Sources */,
+				4AC549241E763D4B006ACE86 /* TYNetWorking.m in Sources */,
+				4A190AA71DE2A3C3008A9297 /* UIView+XMYExtension.m in Sources */,
+				4A86A62F1FCEA9830094F772 /* TYTest1ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AC551251DD1DBDD00620A07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AC5512E1DD1DBDD00620A07 /* TyunStackDemosTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AC551301DD1DBDD00620A07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AC551391DD1DBDD00620A07 /* TyunStackDemosUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4AC5512B1DD1DBDD00620A07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4AC5510F1DD1DBDD00620A07 /* TyunStackDemos */;
+			targetProxy = 4AC5512A1DD1DBDD00620A07 /* PBXContainerItemProxy */;
+		};
+		4AC551361DD1DBDD00620A07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4AC5510F1DD1DBDD00620A07 /* TyunStackDemos */;
+			targetProxy = 4AC551351DD1DBDD00620A07 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4AC5511C1DD1DBDD00620A07 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4AC5511D1DD1DBDD00620A07 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4AC551211DD1DBDD00620A07 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4AC551221DD1DBDD00620A07 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4AC5513B1DD1DBDD00620A07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4AC5513C1DD1DBDD00620A07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4AC5513E1DD1DBDD00620A07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16D5094E7152649C25B1A644 /* Pods-TyunStackDemos.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = P7VM5F7Z6Z;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/TyunStackDemos",
+				);
+				INFOPLIST_FILE = TyunStackDemos/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"FMDB\"",
+					"-l\"MJRefresh\"",
+					"-l\"Masonry\"",
+					"-l\"PNChart\"",
+					"-l\"QMUIKit\"",
+					"-l\"SDCycleScrollView\"",
+					"-l\"SDWebImage\"",
+					"-l\"UICountingLabel\"",
+					"-l\"sqlite3\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Photos\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.youpude.TyunStackDemos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TyunStackDemos/TyunStackDemos-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4AC5513F1DD1DBDD00620A07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E418A2D8FC47685DB199A36C /* Pods-TyunStackDemos.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = P7VM5F7Z6Z;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/TyunStackDemos",
+				);
+				INFOPLIST_FILE = TyunStackDemos/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"FMDB\"",
+					"-l\"MJRefresh\"",
+					"-l\"Masonry\"",
+					"-l\"PNChart\"",
+					"-l\"QMUIKit\"",
+					"-l\"SDCycleScrollView\"",
+					"-l\"SDWebImage\"",
+					"-l\"UICountingLabel\"",
+					"-l\"sqlite3\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Photos\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-weak_framework",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.youpude.TyunStackDemos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TyunStackDemos/TyunStackDemos-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		4AC551411DD1DBDD00620A07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = P7VM5F7Z6Z;
+				INFOPLIST_FILE = TyunStackDemosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.youpude.TyunStackDemosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TyunStackDemos.app/TyunStackDemos";
+			};
+			name = Debug;
+		};
+		4AC551421DD1DBDD00620A07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = P7VM5F7Z6Z;
+				INFOPLIST_FILE = TyunStackDemosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.youpude.TyunStackDemosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TyunStackDemos.app/TyunStackDemos";
+			};
+			name = Release;
+		};
+		4AC551441DD1DBDD00620A07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = P7VM5F7Z6Z;
+				INFOPLIST_FILE = TyunStackDemosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.youpude.TyunStackDemosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TyunStackDemos;
+			};
+			name = Debug;
+		};
+		4AC551451DD1DBDD00620A07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = P7VM5F7Z6Z;
+				INFOPLIST_FILE = TyunStackDemosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.youpude.TyunStackDemosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TyunStackDemos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4AC5510B1DD1DBDD00620A07 /* Build configuration list for PBXProject "TyunStackDemos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AC5513B1DD1DBDD00620A07 /* Debug */,
+				4AC5513C1DD1DBDD00620A07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AC5513D1DD1DBDD00620A07 /* Build configuration list for PBXNativeTarget "TyunStackDemos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AC5513E1DD1DBDD00620A07 /* Debug */,
+				4AC5513F1DD1DBDD00620A07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AC551401DD1DBDD00620A07 /* Build configuration list for PBXNativeTarget "TyunStackDemosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AC551411DD1DBDD00620A07 /* Debug */,
+				4AC551421DD1DBDD00620A07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AC551431DD1DBDD00620A07 /* Build configuration list for PBXNativeTarget "TyunStackDemosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AC551441DD1DBDD00620A07 /* Debug */,
+				4AC551451DD1DBDD00620A07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4AC551081DD1DBDD00620A07 /* Project object */;
+}
