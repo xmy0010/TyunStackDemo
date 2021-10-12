@@ -8,6 +8,7 @@
 
 #import "ViewController1.h"
 #import "GestureView.h"
+#import <GameplayKit/GameplayKit.h>
 
 @interface ViewController1 ()<UIGestureRecognizerDelegate>
 @property (weak, nonatomic) IBOutlet GestureView *greenView;
@@ -26,22 +27,28 @@
     tap.delegate = self;
     UITapGestureRecognizer *tap1 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onTapView:)];
     UITapGestureRecognizer *tap2 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onTapView:)];
-
+    
     [self.greenView addGestureRecognizer:tap];
     [self.yellowView addGestureRecognizer:tap1];
     [self.orangeView addGestureRecognizer:tap2];
     
     
-
+    
     self.orangeView.acceptGesture = YES;
     self.yellowView.acceptGesture = YES;
     self.greenView.acceptGesture = YES;
-//    [self.yellowView touchesBegan:<#(nonnull NSSet<UITouch *> *)#> withEvent:<#(nullable UIEvent *)#>]
+    //    [self.yellowView touchesBegan:<#(nonnull NSSet<UITouch *> *)#> withEvent:<#(nullable UIEvent *)#>]
 }
 
 
 - (IBAction)onBtnClick:(UIButton *)sender {
     
+    NSMutableArray *arr = @[].mutableCopy;
+    for (int i = 0; i < 20; i++) {
+        [arr addObject:[NSString stringWithFormat:@"%d",i]];
+    }
+    NSMutableArray *result = [self shuffleArray:arr];
+    NSLog(@"%@",result);
 }
 
 -(void)onTapView:(UITapGestureRecognizer *)sender {
@@ -72,6 +79,19 @@
     }
 }
 
+
+#pragma mark 随机数组元素
+-(NSMutableArray *)shuffleArray:(NSMutableArray *)array {
+    int count = (int)array.count;
+    for (int i = 0; i < count - 1; i++)
+    {
+        int nElements = count - i;
+        int n = arc4random_uniform(nElements) + i;
+//        int n = arc4random_uniform((uint32_t)count);
+        [array exchangeObjectAtIndex:i withObjectAtIndex:n];
+    }
+    return array;
+}
 
 
 @end
