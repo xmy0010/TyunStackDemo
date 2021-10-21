@@ -9,13 +9,15 @@
 #import "ViewController1.h"
 #import "GestureView.h"
 #import <GameplayKit/GameplayKit.h>
+#import <AVFoundation/AVFoundation.h>
+#import <AVKit/AVKit.h>
 
 @interface ViewController1 ()<UIGestureRecognizerDelegate>
 @property (weak, nonatomic) IBOutlet GestureView *greenView;
 @property (weak, nonatomic) IBOutlet GestureView *yellowView;
 @property (weak, nonatomic) IBOutlet GestureView *orangeView;
 
-
+@property (nonatomic, strong) AVPlayerLayer *layer;
 @property (nonatomic, strong) NSArray *arr;
 
 @end
@@ -59,7 +61,9 @@
 //    NSArray *result = [self sortArray:newArr];
 //    NSLog(@"%@",result);
     
-    [self testBarrier];
+//    [self testBarrier];
+//    [self testAboutQueue];
+    [self avplayerForLive];
 }
 
 -(void)onTapView:(UITapGestureRecognizer *)sender {
@@ -175,5 +179,65 @@
 
 }
 
+#pragma mark 队列 与 线程
+- (void)testAboutQueue {
+    NSLog(@"1");
+//    dispatch_sync(dispatch_get_main_queue(), ^{
+//        NSLog(@"2");  //主线程死锁
+//    });
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSLog(@"2");
+    });
+    NSLog(@"3");
+    
+    NSLog(@"4");
+     dispatch_sync(dispatch_get_global_queue(0, 0), ^{
+         NSLog(@"5");
+     });
+     NSLog(@"6");
+    
+    NSLog(@"7");
+     dispatch_async(dispatch_get_global_queue(0, 0), ^{
+//         sleep(5);    //加这个时候2在8前执行
+         NSLog(@"8"); //8在2前执行
+     });
+     NSLog(@"9");
+}
+
+
+#pragma mark AVPlayer 播放直播
+-(void)avplayerForLive {
+    
+    [self.layer removeFromSuperlayer];
+//    NSString *url = @"http://cdn1.cditv.cn/cdtv5/CDTV5.flv/playlist.m3u8?wsSecret=a2632d6b55740a31850b844687442aa3&wsTime=617113ed";
+    NSString *url = @"http://39.105.104.59:18080/monitor/org17089/8155743778.m3u8";
+
+   
+    AVURLAsset *asset = [AVURLAsset URLAssetWithURL:[[NSURL alloc] initWithString:url] options:nil];
+    AVPlayerItem *playerItem = [[AVPlayerItem alloc] initWithAsset:asset automaticallyLoadedAssetKeys:@[NSStringFromSelector(@selector(tracks))]];
+//
+//    AVPlayer *player = [[AVPlayer alloc] init];
+//    [player replaceCurrentItemWithPlayerItem:playerItem];
+//    AVPlayerLayer *playerLayer = [AVPlayerLayer layer];
+//    self.layer = playerLayer;
+//    [playerLayer setPlayer:player];
+//    playerLayer.frame = CGRectMake(0, 50, 300, 300);
+//    [self.view.layer addSublayer:playerLayer];
+//    [player play];
+    
+        AVPlayerViewController *playerVC = [[AVPlayerViewController alloc] init];
+        playerVC.player = [AVPlayer playerWithURL:[url hasPrefix:@"http"] ? [NSURL URLWithString:url]:[NSURL fileURLWithPath:url]];
+        playerVC.view.frame = self.view.bounds;
+//        [playerVC.player replaceCurrentItemWithPlayerItem:playerItem];
+        playerVC.showsPlaybackControls = YES;
+    //self.playerVC.entersFullScreenWhenPlaybackBegins = YES;//开启这个播放的时候支持（全屏）横竖屏哦
+    //self.playerVC.exitsFullScreenWhenPlaybackEnds = YES;//开启这个所有 item 播放完毕可以退出全屏
+        [self.navigationController pushViewController:playerVC animated:YES];
+    
+        if (playerVC.readyForDisplay) {
+            [playerVC.player play];
+        }
+
+}
 
 @end
