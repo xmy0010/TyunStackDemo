@@ -153,7 +153,13 @@
                             <constraint firstItem="RU7-Pu-VOj" firstAttribute="leading" secondItem="Qz6-kB-zIG" secondAttribute="leadingMargin" constant="18" id="n1e-tA-Quy"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Dig-CJ-oTx"/>
+                    <navigationItem key="navigationItem" id="Dig-CJ-oTx">
+                        <barButtonItem key="rightBarButtonItem" title="VC2" id="9SU-eX-ioC">
+                            <connections>
+                                <segue destination="X1B-vB-kuk" kind="show" id="zFD-8Q-MHd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="greenView" destination="RU7-Pu-VOj" id="pHe-Wt-9gF"/>
                         <outlet property="orangeView" destination="7ae-Y2-jAd" id="DAI-I7-6Y8"/>
@@ -163,6 +169,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ggx-jY-6mR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3239.1999999999998" y="-734.48275862068976"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="giE-gD-O4Y">
+            <objects>
+                <viewController storyboardIdentifier="ViewController2" id="X1B-vB-kuk" customClass="ViewController2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VBK-Z6-gns"/>
+                        <viewControllerLayoutGuide type="bottom" id="OAH-yB-16d"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YTf-um-Ai1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSG-3W-mbI">
+                                <rect key="frame" x="40" y="167" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="onBtnClick:" destination="2Wq-zG-nBx" eventType="touchUpInside" id="rUW-Vb-S2H"/>
+                                    <action selector="onBtnTap:" destination="X1B-vB-kuk" eventType="touchUpInside" id="Ykl-NC-DwC"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plane.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Ga1-82-8Rs">
+                                <rect key="frame" x="0.0" y="232" width="50" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="fbF-Pt-foq"/>
+                                    <constraint firstAttribute="width" constant="50" id="l8o-cX-O8R"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ga1-82-8Rs" firstAttribute="leading" secondItem="YTf-um-Ai1" secondAttribute="leading" id="2mW-xR-L5Q"/>
+                            <constraint firstItem="zSG-3W-mbI" firstAttribute="leading" secondItem="YTf-um-Ai1" secondAttribute="leadingMargin" constant="24" id="Aa2-B3-Rfy"/>
+                            <constraint firstItem="zSG-3W-mbI" firstAttribute="top" secondItem="VBK-Z6-gns" secondAttribute="bottom" constant="123" id="PMU-D7-SJd"/>
+                            <constraint firstItem="Ga1-82-8Rs" firstAttribute="top" secondItem="zSG-3W-mbI" secondAttribute="bottom" constant="35" id="b3Q-8z-MFX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="lDI-AV-2m8"/>
+                    <connections>
+                        <outlet property="planeImage" destination="Ga1-82-8Rs" id="UtX-3g-vm5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IGt-ct-pKf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4129" y="-734"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -411,6 +462,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="plane.jpg" width="91" height="47"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

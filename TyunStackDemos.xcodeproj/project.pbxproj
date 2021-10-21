@@ -24,6 +24,8 @@
 		4A491864216DD3560048599E /* XMYSon.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A491863216DD3560048599E /* XMYSon.m */; };
 		4A86A62F1FCEA9830094F772 /* TYTest1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A86A62E1FCEA9830094F772 /* TYTest1ViewController.m */; };
 		4A86A6331FCEA9DA0094F772 /* TYTest2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A86A6311FCEA9DA0094F772 /* TYTest2ViewController.m */; };
+		4A8C1A022721674A00262457 /* plane.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4A8C1A012721674A00262457 /* plane.jpg */; };
+		4A8C1A052721686D00262457 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8C1A042721686D00262457 /* ViewController2.m */; };
 		4AB83F9E26F1D76F00DCB007 /* GlobalValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB83F9D26F1D76F00DCB007 /* GlobalValue.m */; };
 		4ABEA9572710209D00E6F40E /* GestureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABEA9562710209D00E6F40E /* GestureView.m */; };
 		4AC549241E763D4B006ACE86 /* TYNetWorking.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC549231E763D4B006ACE86 /* TYNetWorking.m */; };
@@ -103,6 +105,9 @@
 		4A86A62E1FCEA9830094F772 /* TYTest1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYTest1ViewController.m; sourceTree = "<group>"; };
 		4A86A6301FCEA9DA0094F772 /* TYTest2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYTest2ViewController.h; sourceTree = "<group>"; };
 		4A86A6311FCEA9DA0094F772 /* TYTest2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYTest2ViewController.m; sourceTree = "<group>"; };
+		4A8C1A012721674A00262457 /* plane.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = plane.jpg; sourceTree = "<group>"; };
+		4A8C1A032721686D00262457 /* ViewController2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		4A8C1A042721686D00262457 /* ViewController2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
 		4AB83F9C26F1D76F00DCB007 /* GlobalValue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalValue.h; sourceTree = "<group>"; };
 		4AB83F9D26F1D76F00DCB007 /* GlobalValue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlobalValue.m; sourceTree = "<group>"; };
 		4ABEA9552710209D00E6F40E /* GestureView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GestureView.h; sourceTree = "<group>"; };
@@ -201,10 +206,13 @@
 		4ABEA9542710203200E6F40E /* Gesture */ = {
 			isa = PBXGroup;
 			children = (
+				4A8C1A012721674A00262457 /* plane.jpg */,
 				4A0DA1582705A7D5000CE946 /* ViewController1.h */,
 				4A0DA1592705A7D5000CE946 /* ViewController1.m */,
 				4ABEA9552710209D00E6F40E /* GestureView.h */,
 				4ABEA9562710209D00E6F40E /* GestureView.m */,
+				4A8C1A032721686D00262457 /* ViewController2.h */,
+				4A8C1A042721686D00262457 /* ViewController2.m */,
 			);
 			path = Gesture;
 			sourceTree = "<group>";
@@ -462,6 +470,7 @@
 				4AC551231DD1DBDD00620A07 /* LaunchScreen.storyboard in Resources */,
 				4A048E2126E5AADA004297AD /* WebController.xib in Resources */,
 				4A2E90911E2DECCD00D34FE2 /* db_fo_dic.sqlite in Resources */,
+				4A8C1A022721674A00262457 /* plane.jpg in Resources */,
 				4AC551201DD1DBDD00620A07 /* Assets.xcassets in Resources */,
 				4AC5511E1DD1DBDD00620A07 /* Main.storyboard in Resources */,
 			);
@@ -534,6 +543,7 @@
 				4AF7C9841FEA2A4E001DF6BF /* TYQuickLookController.m in Sources */,
 				4AC549271E763FED006ACE86 /* NSString+TYExtension.m in Sources */,
 				4AC551181DD1DBDD00620A07 /* AppDelegate.m in Sources */,
+				4A8C1A052721686D00262457 /* ViewController2.m in Sources */,
 				4A40C6B52701C229006A6B2B /* NullSafe.m in Sources */,
 				4A06F7BF1E0CC8D30057261D /* Person.m in Sources */,
 				4AC551151DD1DBDD00620A07 /* main.m in Sources */,
