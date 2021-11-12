@@ -21,7 +21,9 @@
 }
 
 - (IBAction)onBtnTap:(id)sender {
-    [self planeDepart];
+//    [self planeDepart];
+    
+    [self fastDictionary];
 }
 
 
@@ -61,9 +63,45 @@
         }];
         
     } completion:nil];
-    
- 
-
 }
+
+-(void)fastDictionary {
+    NSDictionary *dic = @{@"key1":@"value1",@"key2":@"value2",@"key3":@"value3"};
+    for (NSString *key in dic) {
+        NSString *value = dic[key];
+        NSLog(@"key=%@,value=%@",key,value);
+    }
+}
+
+//-(void)pathAnimation:(CFTimeInterval)beginTime {
+//    UIBezierPath *circlePath1 = [UIBezierPath bezierPathWithArcCenter:self.view.center radius:3 startAngle:0 endAngle:M_PI * 2 clockwise:YES];
+//    UIBezierPath *circlePath2 = [UIBezierPath bezierPathWithArcCenter:self.view.center radius:80 startAngle:0 endAngle:M_PI *2 clockwise:YES];
+//    CAShapeLayer *shapeLayer = [[CAShapeLayer alloc] init];
+//    shapeLayer.strokeColor = UIColor.greenColor.CGColor;
+//    shapeLayer.fillColor = UIColor.greenColor.CGColor;
+//    shapeLayer.path = circlePath1.CGPath;
+//    [self.view.layer addSublayer:shapeLayer];
+//
+//    //俩个动画
+//    CABasicAnimation *pathAnimation = [CABasicAnimation animationWithKeyPath:@"path"];
+//    pathAnimation.fromValue = CFBridgingRelease(circlePath1.CGPath);
+//    pathAnimation.toValue = CFBridgingRelease(circlePath2.CGPath);
+//
+//    CABasicAnimation *alphaAnimation = [CABasicAnimation animationWithKeyPath:@"opacity"];
+//    alphaAnimation.fromValue = @0.8;
+//    alphaAnimation.toValue = 0;
+//
+//    //组动画
+//    CAAnimationGroup *animationGroup = [CAAnimationGroup animation];
+//    animationGroup.beginTime = beginTime;
+//    animationGroup.animations = @[pathAnimation, alphaAnimation];
+//    animationGroup.duration = 2.76;
+//    //不断重复
+//    animationGroup.repeatCount = MAXFLOAT;
+//    [animationGroup setRemovedOnCompletion:NO];
+////    animationGroup.fillMode = @"forwards";
+//    //key 用来dubug
+//    [shapeLayer addAnimation:animationGroup forKey:@"pathAnimation"];
+//}
 
 @end
