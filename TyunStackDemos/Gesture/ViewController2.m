@@ -70,6 +70,7 @@
     for (NSString *key in dic) {
         NSString *value = dic[key];
         NSLog(@"key=%@,value=%@",key,value);
+        //code11
     }
 }
 
@@ -105,5 +106,5 @@
 //}
 
 // code1.2
-
+// code1.4
 @end
