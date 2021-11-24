@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4A048E0D26DF6B07004297AD /* BaiduTraceSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A65295026DC76F70013EC39 /* BaiduTraceSDK.framework */; };
-		4A048E0E26DF6B07004297AD /* BaiduTraceSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A65295026DC76F70013EC39 /* BaiduTraceSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4A048E1326E1AEB8004297AD /* ShowColorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A048E1126E1AEB8004297AD /* ShowColorController.m */; };
 		4A048E1426E1AEB8004297AD /* ShowColorController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A048E1226E1AEB8004297AD /* ShowColorController.xib */; };
 		4A048E2126E5AADA004297AD /* WebController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A048E1E26E5AADA004297AD /* WebController.xib */; };
@@ -70,7 +68,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4A048E0E26DF6B07004297AD /* BaiduTraceSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,7 +97,6 @@
 		4A40C6B42701C229006A6B2B /* NullSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NullSafe.m; sourceTree = "<group>"; };
 		4A491862216DD3560048599E /* XMYSon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMYSon.h; sourceTree = "<group>"; };
 		4A491863216DD3560048599E /* XMYSon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMYSon.m; sourceTree = "<group>"; };
-		4A65295026DC76F70013EC39 /* BaiduTraceSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduTraceSDK.framework; sourceTree = "<group>"; };
 		4A86A62D1FCEA9830094F772 /* TYTest1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYTest1ViewController.h; sourceTree = "<group>"; };
 		4A86A62E1FCEA9830094F772 /* TYTest1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYTest1ViewController.m; sourceTree = "<group>"; };
 		4A86A6301FCEA9DA0094F772 /* TYTest2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYTest2ViewController.h; sourceTree = "<group>"; };
@@ -152,7 +148,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A048E0D26DF6B07004297AD /* BaiduTraceSDK.framework in Frameworks */,
 				94EB70B5CB1B757B50A7FCD6 /* libPods-TyunStackDemos.a in Frameworks */,
 				4A1461401F69323600760BE6 /* MapKit.framework in Frameworks */,
 			);
@@ -254,7 +249,6 @@
 			children = (
 				4ABEA9542710203200E6F40E /* Gesture */,
 				4A048E0F26E1AE85004297AD /* New Group */,
-				4A65295026DC76F70013EC39 /* BaiduTraceSDK.framework */,
 				4AF7C9811FEA2A30001DF6BF /* 在线预览 */,
 				4AC549281E76618A006ACE86 /* GTMBase64 */,
 				4A2E90901E2DECCD00D34FE2 /* db_fo_dic.sqlite */,

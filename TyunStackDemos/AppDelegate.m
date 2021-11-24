@@ -8,13 +8,12 @@
 
 #import "AppDelegate.h"
 #import "BaseWebViewController.h"
-#import <BaiduTraceSDK/BaiduTraceSDK.h>
 //#import "IQKeyboardManager.h"
 
 #import "TYQuickLookController.h"
 
 
-@interface AppDelegate ()<BTKTraceDelegate>
+@interface AppDelegate ()
 
 @end
 
@@ -63,60 +62,60 @@
     return YES;
 }
 
-//服务开启
-- (void)onStartService:(BTKServiceErrorCode)error{
-
-    // 维护状态标志
-    if (error == BTK_START_SERVICE_SUCCESS || error == BTK_START_SERVICE_SUCCESS_BUT_OFFLINE) {
-        NSLog(@"轨迹服务开启成功");
-    } else {
-        NSLog(@"轨迹服务开启失败");
-    }
-}
-
-//采集回调
-- (void)onStartGather:(BTKGatherErrorCode)error{
-
-    if (error == BTK_START_GATHER_SUCCESS) {
-        NSLog(@"开始采集成功");
-    } else {
-        NSLog(@"开始采集失败");
-    }
-}
-
-//自定义字段上传
--(NSDictionary *)onGetCustomData {
-    NSMutableDictionary *customData = [NSMutableDictionary dictionaryWithCapacity:3];
-    NSArray *intPoll = @[@5000, @7000, @9000];
-    NSArray *doublePoll = @[@3.5, @4.6, @5.7];
-    NSArray *stringPoll = @[@"aaa", @"bbb", @"ccc"];
-    int randomNum = arc4random() % 3;
-    // intTest doubleTest stringTest这3个自定义字段需要在轨迹管理台提前设置才有效
-    customData[@"intTest"] = intPoll[randomNum];
-    customData[@"doubleTest"] = doublePoll[randomNum];
-    customData[@"stringTest"] = stringPoll[randomNum];
-    return [NSDictionary dictionaryWithDictionary:customData];
-}
-
-//消息推送回调
--(void)onGetPushMessage:(BTKPushMessage *)message {
-    NSLog(@"收到推送消息，消息类型: %@", @(message.type));
-    if (message.type == 0x03) {
-        BTKPushMessageFenceAlarmContent *content = (BTKPushMessageFenceAlarmContent *)message.content;
-        if (content.actionType == BTK_FENCE_MONITORED_OBJECT_ACTION_TYPE_ENTER) {
-            NSLog(@"被监控对象 %@ 进入 服务端地理围栏 %@ ", content.monitoredObject, content.fenceName);
-        } else if (content.actionType == BTK_FENCE_MONITORED_OBJECT_ACTION_TYPE_EXIT) {
-            NSLog(@"被监控对象 %@ 离开 服务端地理围栏 %@ ", content.monitoredObject, content.fenceName);
-        }
-    } else if (message.type == 0x04) {
-        BTKPushMessageFenceAlarmContent *content = (BTKPushMessageFenceAlarmContent *)message.content;
-        if (content.actionType == BTK_FENCE_MONITORED_OBJECT_ACTION_TYPE_ENTER) {
-            NSLog(@"被监控对象 %@ 进入 客户端地理围栏 %@ ", content.monitoredObject, content.fenceName);
-        } else if (content.actionType == BTK_FENCE_MONITORED_OBJECT_ACTION_TYPE_EXIT) {
-            NSLog(@"被监控对象 %@ 离开 客户端地理围栏 %@ ", content.monitoredObject, content.fenceName);
-        }
-    }
-}
+////服务开启
+//- (void)onStartService:(BTKServiceErrorCode)error{
+//
+//    // 维护状态标志
+//    if (error == BTK_START_SERVICE_SUCCESS || error == BTK_START_SERVICE_SUCCESS_BUT_OFFLINE) {
+//        NSLog(@"轨迹服务开启成功");
+//    } else {
+//        NSLog(@"轨迹服务开启失败");
+//    }
+//}
+//
+////采集回调
+//- (void)onStartGather:(BTKGatherErrorCode)error{
+//
+//    if (error == BTK_START_GATHER_SUCCESS) {
+//        NSLog(@"开始采集成功");
+//    } else {
+//        NSLog(@"开始采集失败");
+//    }
+//}
+//
+////自定义字段上传
+//-(NSDictionary *)onGetCustomData {
+//    NSMutableDictionary *customData = [NSMutableDictionary dictionaryWithCapacity:3];
+//    NSArray *intPoll = @[@5000, @7000, @9000];
+//    NSArray *doublePoll = @[@3.5, @4.6, @5.7];
+//    NSArray *stringPoll = @[@"aaa", @"bbb", @"ccc"];
+//    int randomNum = arc4random() % 3;
+//    // intTest doubleTest stringTest这3个自定义字段需要在轨迹管理台提前设置才有效
+//    customData[@"intTest"] = intPoll[randomNum];
+//    customData[@"doubleTest"] = doublePoll[randomNum];
+//    customData[@"stringTest"] = stringPoll[randomNum];
+//    return [NSDictionary dictionaryWithDictionary:customData];
+//}
+//
+////消息推送回调
+//-(void)onGetPushMessage:(BTKPushMessage *)message {
+//    NSLog(@"收到推送消息，消息类型: %@", @(message.type));
+//    if (message.type == 0x03) {
+//        BTKPushMessageFenceAlarmContent *content = (BTKPushMessageFenceAlarmContent *)message.content;
+//        if (content.actionType == BTK_FENCE_MONITORED_OBJECT_ACTION_TYPE_ENTER) {
+//            NSLog(@"被监控对象 %@ 进入 服务端地理围栏 %@ ", content.monitoredObject, content.fenceName);
+//        } else if (content.actionType == BTK_FENCE_MONITORED_OBJECT_ACTION_TYPE_EXIT) {
+//            NSLog(@"被监控对象 %@ 离开 服务端地理围栏 %@ ", content.monitoredObject, content.fenceName);
+//        }
+//    } else if (message.type == 0x04) {
+//        BTKPushMessageFenceAlarmContent *content = (BTKPushMessageFenceAlarmContent *)message.content;
+//        if (content.actionType == BTK_FENCE_MONITORED_OBJECT_ACTION_TYPE_ENTER) {
+//            NSLog(@"被监控对象 %@ 进入 客户端地理围栏 %@ ", content.monitoredObject, content.fenceName);
+//        } else if (content.actionType == BTK_FENCE_MONITORED_OBJECT_ACTION_TYPE_EXIT) {
+//            NSLog(@"被监控对象 %@ 离开 客户端地理围栏 %@ ", content.monitoredObject, content.fenceName);
+//        }
+//    }
+//}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

@@ -30,7 +30,6 @@ static NSString *const onlySelfClassUseString = @"xxxxx";
 #import <MobileCoreServices/MobileCoreServices.h>
 #import "TYNetWorking.h"
 #import <MJRefresh.h>
-#import <BaiduTraceSDK/BaiduTraceSDK.h>
 
 #import "NSString+TYExtension.h"
 #import <Masonry.h>
@@ -43,7 +42,7 @@ static NSString *const onlySelfClassUseString = @"xxxxx";
 
 NSString *const kMyConstString = @"kMyConstString";
 
-@interface ViewController () <SDCycleScrollViewDelegate, CAAnimationDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITableViewDelegate, UITableViewDataSource, WKNavigationDelegate, WKUIDelegate, BTKTraceDelegate,UITextFieldDelegate>
+@interface ViewController () <SDCycleScrollViewDelegate, CAAnimationDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITableViewDelegate, UITableViewDataSource, WKNavigationDelegate, WKUIDelegate,UITextFieldDelegate>
 
 @property (nonatomic, strong) PNLineChart *lineChart;
 @property (nonatomic, strong)PNLineChartData *data01;
@@ -538,83 +537,83 @@ static NSInteger global_static_val = 1; // 静态全局变量
 }
 
 #pragma mark 测试鹰眼
--(void)testYY{
+//-(void)testYY{
+//
+//    BTKStartServiceOption *op = [[BTKStartServiceOption alloc] initWithEntityName:@"entityA"];
+//    //        // 初始化地图SDK
+//    //        BMKMapManager *mapManager = [[BMKMapManager alloc] init];
+//    //        [mapManager start:AK generalDelegate:self];
+//    // 开启服务
+//    // 设置开启轨迹服务时的服务选项，指定本次服务以“entityA”的名义开启
+//    
+//    
+//    //开始采集
+//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+//        
+//        [[BTKAction sharedInstance] startService:op delegate:self];
+//        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//            
+//            //开始采集
+//            [[BTKAction sharedInstance] startGather:self];
+//        });
+//
+//    });
+//}
+//
+////服务开启
+//- (void)onStartService:(BTKServiceErrorCode)error{
+//
+//    // 维护状态标志
+//    if (error == BTK_START_SERVICE_SUCCESS || error == BTK_START_SERVICE_SUCCESS_BUT_OFFLINE) {
+//        NSLog(@"轨迹服务开启成功");
+//    } else {
+//        NSLog(@"轨迹服务开启失败");
+//    }
+//}
+//
+////采集回调
+//- (void)onStartGather:(BTKGatherErrorCode)error{
+//    
+//    if (error == BTK_START_GATHER_SUCCESS) {
+//        NSLog(@"开始采集成功");
+//    } else {
+//        NSLog(@"开始采集失败");
+//    }
+//}
+//
+////自定义字段上传
+//-(NSDictionary *)onGetCustomData {
+//    NSMutableDictionary *customData = [NSMutableDictionary dictionaryWithCapacity:3];
+//    NSArray *intPoll = @[@5000, @7000, @9000];
+//    NSArray *doublePoll = @[@3.5, @4.6, @5.7];
+//    NSArray *stringPoll = @[@"aaa", @"bbb", @"ccc"];
+//    int randomNum = arc4random() % 3;
+//    // intTest doubleTest stringTest这3个自定义字段需要在轨迹管理台提前设置才有效
+//    customData[@"intTest"] = intPoll[randomNum];
+//    customData[@"doubleTest"] = doublePoll[randomNum];
+//    customData[@"stringTest"] = stringPoll[randomNum];
+//    return [NSDictionary dictionaryWithDictionary:customData];
+//}
 
-    BTKStartServiceOption *op = [[BTKStartServiceOption alloc] initWithEntityName:@"entityA"];
-    //        // 初始化地图SDK
-    //        BMKMapManager *mapManager = [[BMKMapManager alloc] init];
-    //        [mapManager start:AK generalDelegate:self];
-    // 开启服务
-    // 设置开启轨迹服务时的服务选项，指定本次服务以“entityA”的名义开启
-    
-    
-    //开始采集
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        
-        [[BTKAction sharedInstance] startService:op delegate:self];
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            
-            //开始采集
-            [[BTKAction sharedInstance] startGather:self];
-        });
-
-    });
-}
-
-//服务开启
-- (void)onStartService:(BTKServiceErrorCode)error{
-
-    // 维护状态标志
-    if (error == BTK_START_SERVICE_SUCCESS || error == BTK_START_SERVICE_SUCCESS_BUT_OFFLINE) {
-        NSLog(@"轨迹服务开启成功");
-    } else {
-        NSLog(@"轨迹服务开启失败");
-    }
-}
-
-//采集回调
-- (void)onStartGather:(BTKGatherErrorCode)error{
-    
-    if (error == BTK_START_GATHER_SUCCESS) {
-        NSLog(@"开始采集成功");
-    } else {
-        NSLog(@"开始采集失败");
-    }
-}
-
-//自定义字段上传
--(NSDictionary *)onGetCustomData {
-    NSMutableDictionary *customData = [NSMutableDictionary dictionaryWithCapacity:3];
-    NSArray *intPoll = @[@5000, @7000, @9000];
-    NSArray *doublePoll = @[@3.5, @4.6, @5.7];
-    NSArray *stringPoll = @[@"aaa", @"bbb", @"ccc"];
-    int randomNum = arc4random() % 3;
-    // intTest doubleTest stringTest这3个自定义字段需要在轨迹管理台提前设置才有效
-    customData[@"intTest"] = intPoll[randomNum];
-    customData[@"doubleTest"] = doublePoll[randomNum];
-    customData[@"stringTest"] = stringPoll[randomNum];
-    return [NSDictionary dictionaryWithDictionary:customData];
-}
-
-//消息推送回调
--(void)onGetPushMessage:(BTKPushMessage *)message {
-    NSLog(@"收到推送消息，消息类型: %@", @(message.type));
-    if (message.type == 0x03) {
-        BTKPushMessageFenceAlarmContent *content = (BTKPushMessageFenceAlarmContent *)message.content;
-        if (content.actionType == BTK_FENCE_MONITORED_OBJECT_ACTION_TYPE_ENTER) {
-            NSLog(@"被监控对象 %@ 进入 服务端地理围栏 %@ ", content.monitoredObject, content.fenceName);
-        } else if (content.actionType == BTK_FENCE_MONITORED_OBJECT_ACTION_TYPE_EXIT) {
-            NSLog(@"被监控对象 %@ 离开 服务端地理围栏 %@ ", content.monitoredObject, content.fenceName);
-        }
-    } else if (message.type == 0x04) {
-        BTKPushMessageFenceAlarmContent *content = (BTKPushMessageFenceAlarmContent *)message.content;
-        if (content.actionType == BTK_FENCE_MONITORED_OBJECT_ACTION_TYPE_ENTER) {
-            NSLog(@"被监控对象 %@ 进入 客户端地理围栏 %@ ", content.monitoredObject, content.fenceName);
-        } else if (content.actionType == BTK_FENCE_MONITORED_OBJECT_ACTION_TYPE_EXIT) {
-            NSLog(@"被监控对象 %@ 离开 客户端地理围栏 %@ ", content.monitoredObject, content.fenceName);
-        }
-    }
-}
+////消息推送回调
+//-(void)onGetPushMessage:(BTKPushMessage *)message {
+//    NSLog(@"收到推送消息，消息类型: %@", @(message.type));
+//    if (message.type == 0x03) {
+//        BTKPushMessageFenceAlarmContent *content = (BTKPushMessageFenceAlarmContent *)message.content;
+//        if (content.actionType == BTK_FENCE_MONITORED_OBJECT_ACTION_TYPE_ENTER) {
+//            NSLog(@"被监控对象 %@ 进入 服务端地理围栏 %@ ", content.monitoredObject, content.fenceName);
+//        } else if (content.actionType == BTK_FENCE_MONITORED_OBJECT_ACTION_TYPE_EXIT) {
+//            NSLog(@"被监控对象 %@ 离开 服务端地理围栏 %@ ", content.monitoredObject, content.fenceName);
+//        }
+//    } else if (message.type == 0x04) {
+//        BTKPushMessageFenceAlarmContent *content = (BTKPushMessageFenceAlarmContent *)message.content;
+//        if (content.actionType == BTK_FENCE_MONITORED_OBJECT_ACTION_TYPE_ENTER) {
+//            NSLog(@"被监控对象 %@ 进入 客户端地理围栏 %@ ", content.monitoredObject, content.fenceName);
+//        } else if (content.actionType == BTK_FENCE_MONITORED_OBJECT_ACTION_TYPE_EXIT) {
+//            NSLog(@"被监控对象 %@ 离开 客户端地理围栏 %@ ", content.monitoredObject, content.fenceName);
+//        }
+//    }
+//}
 
 #pragma mark 下拉刷新 上拉加载
 -(void)MJRefresh{
