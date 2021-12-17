@@ -12,20 +12,30 @@
 		4A048E2126E5AADA004297AD /* WebController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A048E1E26E5AADA004297AD /* WebController.xib */; };
 		4A048E2226E5AADA004297AD /* WebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A048E2026E5AADA004297AD /* WebController.m */; };
 		4A06F7BF1E0CC8D30057261D /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A06F7BE1E0CC8D30057261D /* Person.m */; };
+		4A0B5E29274E3E2200378106 /* news_video_slider@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A0B5E27274E3E2200378106 /* news_video_slider@2x.png */; };
+		4A0B5E2A274E3E2200378106 /* news_video_slider@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A0B5E28274E3E2200378106 /* news_video_slider@3x.png */; };
 		4A0DA15A2705A7D5000CE946 /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0DA1592705A7D5000CE946 /* ViewController1.m */; };
 		4A1461401F69323600760BE6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A14613F1F69323600760BE6 /* MapKit.framework */; };
 		4A190AA71DE2A3C3008A9297 /* UIView+XMYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A190AA51DE2A3C3008A9297 /* UIView+XMYExtension.m */; };
+		4A1BBD282759A3CB00E89362 /* TYTableWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A1BBD272759A3CB00E89362 /* TYTableWebController.m */; };
+		4A1BBD2D2759A54800E89362 /* TYWapCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A1BBD2A2759A54800E89362 /* TYWapCell.xib */; };
+		4A1BBD2E2759A54800E89362 /* TYWapCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A1BBD2C2759A54800E89362 /* TYWapCell.m */; };
 		4A24600A2289630E00B34F6C /* XMYTestTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A2460092289630E00B34F6C /* XMYTestTableVC.m */; };
 		4A260DE41F568E3500AB4CAD /* BaseWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A260DE31F568E3500AB4CAD /* BaseWebViewController.m */; };
 		4A2E90911E2DECCD00D34FE2 /* db_fo_dic.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 4A2E90901E2DECCD00D34FE2 /* db_fo_dic.sqlite */; };
 		4A40C6B52701C229006A6B2B /* NullSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A40C6B42701C229006A6B2B /* NullSafe.m */; };
 		4A491864216DD3560048599E /* XMYSon.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A491863216DD3560048599E /* XMYSon.m */; };
+		4A788EE927577CBF00DBFE45 /* content1.html in Resources */ = {isa = PBXBuildFile; fileRef = 4A788EE827577CBF00DBFE45 /* content1.html */; };
 		4A86A62F1FCEA9830094F772 /* TYTest1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A86A62E1FCEA9830094F772 /* TYTest1ViewController.m */; };
 		4A86A6331FCEA9DA0094F772 /* TYTest2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A86A6311FCEA9DA0094F772 /* TYTest2ViewController.m */; };
 		4A8C1A022721674A00262457 /* plane.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4A8C1A012721674A00262457 /* plane.jpg */; };
 		4A8C1A052721686D00262457 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8C1A042721686D00262457 /* ViewController2.m */; };
 		4AB83F9E26F1D76F00DCB007 /* GlobalValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB83F9D26F1D76F00DCB007 /* GlobalValue.m */; };
 		4ABEA9572710209D00E6F40E /* GestureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABEA9562710209D00E6F40E /* GestureView.m */; };
+		4ABF0C4127508A4F008AA4E7 /* ViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABF0C4027508A4F008AA4E7 /* ViewController3.m */; };
+		4ABF0C442750CAA2008AA4E7 /* content.html in Resources */ = {isa = PBXBuildFile; fileRef = 4ABF0C422750CAA2008AA4E7 /* content.html */; };
+		4ABF0C452750CAA2008AA4E7 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 4ABF0C432750CAA2008AA4E7 /* content.js */; };
+		4ABF0C472750CAD1008AA4E7 /* video.html in Resources */ = {isa = PBXBuildFile; fileRef = 4ABF0C462750CAD1008AA4E7 /* video.html */; };
 		4AC549241E763D4B006ACE86 /* TYNetWorking.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC549231E763D4B006ACE86 /* TYNetWorking.m */; };
 		4AC549271E763FED006ACE86 /* NSString+TYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC549261E763FED006ACE86 /* NSString+TYExtension.m */; };
 		4AC5492C1E76618A006ACE86 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC5492A1E76618A006ACE86 /* GTMBase64.m */; };
@@ -84,11 +94,18 @@
 		4A048E2026E5AADA004297AD /* WebController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebController.m; sourceTree = "<group>"; };
 		4A06F7BD1E0CC8D30057261D /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		4A06F7BE1E0CC8D30057261D /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		4A0B5E27274E3E2200378106 /* news_video_slider@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "news_video_slider@2x.png"; sourceTree = "<group>"; };
+		4A0B5E28274E3E2200378106 /* news_video_slider@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "news_video_slider@3x.png"; sourceTree = "<group>"; };
 		4A0DA1582705A7D5000CE946 /* ViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
 		4A0DA1592705A7D5000CE946 /* ViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
 		4A14613F1F69323600760BE6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		4A190AA41DE2A3C3008A9297 /* UIView+XMYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XMYExtension.h"; sourceTree = "<group>"; };
 		4A190AA51DE2A3C3008A9297 /* UIView+XMYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XMYExtension.m"; sourceTree = "<group>"; };
+		4A1BBD262759A3CB00E89362 /* TYTableWebController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYTableWebController.h; sourceTree = "<group>"; };
+		4A1BBD272759A3CB00E89362 /* TYTableWebController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYTableWebController.m; sourceTree = "<group>"; };
+		4A1BBD2A2759A54800E89362 /* TYWapCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYWapCell.xib; sourceTree = "<group>"; };
+		4A1BBD2B2759A54800E89362 /* TYWapCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYWapCell.h; sourceTree = "<group>"; };
+		4A1BBD2C2759A54800E89362 /* TYWapCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYWapCell.m; sourceTree = "<group>"; };
 		4A2460082289630E00B34F6C /* XMYTestTableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMYTestTableVC.h; sourceTree = "<group>"; };
 		4A2460092289630E00B34F6C /* XMYTestTableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMYTestTableVC.m; sourceTree = "<group>"; };
 		4A260DE21F568E3500AB4CAD /* BaseWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseWebViewController.h; sourceTree = "<group>"; };
@@ -97,6 +114,7 @@
 		4A40C6B42701C229006A6B2B /* NullSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NullSafe.m; sourceTree = "<group>"; };
 		4A491862216DD3560048599E /* XMYSon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMYSon.h; sourceTree = "<group>"; };
 		4A491863216DD3560048599E /* XMYSon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMYSon.m; sourceTree = "<group>"; };
+		4A788EE827577CBF00DBFE45 /* content1.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = content1.html; sourceTree = "<group>"; };
 		4A86A62D1FCEA9830094F772 /* TYTest1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYTest1ViewController.h; sourceTree = "<group>"; };
 		4A86A62E1FCEA9830094F772 /* TYTest1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYTest1ViewController.m; sourceTree = "<group>"; };
 		4A86A6301FCEA9DA0094F772 /* TYTest2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYTest2ViewController.h; sourceTree = "<group>"; };
@@ -108,6 +126,11 @@
 		4AB83F9D26F1D76F00DCB007 /* GlobalValue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlobalValue.m; sourceTree = "<group>"; };
 		4ABEA9552710209D00E6F40E /* GestureView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GestureView.h; sourceTree = "<group>"; };
 		4ABEA9562710209D00E6F40E /* GestureView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GestureView.m; sourceTree = "<group>"; };
+		4ABF0C3F27508A4F008AA4E7 /* ViewController3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController3.h; sourceTree = "<group>"; };
+		4ABF0C4027508A4F008AA4E7 /* ViewController3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController3.m; sourceTree = "<group>"; };
+		4ABF0C422750CAA2008AA4E7 /* content.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = content.html; sourceTree = "<group>"; };
+		4ABF0C432750CAA2008AA4E7 /* content.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
+		4ABF0C462750CAD1008AA4E7 /* video.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = video.html; sourceTree = "<group>"; };
 		4AC549221E763D4B006ACE86 /* TYNetWorking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYNetWorking.h; sourceTree = "<group>"; };
 		4AC549231E763D4B006ACE86 /* TYNetWorking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYNetWorking.m; sourceTree = "<group>"; };
 		4AC549251E763FED006ACE86 /* NSString+TYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TYExtension.h"; sourceTree = "<group>"; };
@@ -198,9 +221,29 @@
 			path = "New Group";
 			sourceTree = "<group>";
 		};
+		4A1BBD292759A3F900E89362 /* tableWeb */ = {
+			isa = PBXGroup;
+			children = (
+				4ABF0C3F27508A4F008AA4E7 /* ViewController3.h */,
+				4ABF0C4027508A4F008AA4E7 /* ViewController3.m */,
+				4A1BBD2B2759A54800E89362 /* TYWapCell.h */,
+				4A1BBD2C2759A54800E89362 /* TYWapCell.m */,
+				4A1BBD2A2759A54800E89362 /* TYWapCell.xib */,
+				4A1BBD262759A3CB00E89362 /* TYTableWebController.h */,
+				4A1BBD272759A3CB00E89362 /* TYTableWebController.m */,
+			);
+			path = tableWeb;
+			sourceTree = "<group>";
+		};
 		4ABEA9542710203200E6F40E /* Gesture */ = {
 			isa = PBXGroup;
 			children = (
+				4A788EE827577CBF00DBFE45 /* content1.html */,
+				4ABF0C462750CAD1008AA4E7 /* video.html */,
+				4ABF0C422750CAA2008AA4E7 /* content.html */,
+				4ABF0C432750CAA2008AA4E7 /* content.js */,
+				4A0B5E27274E3E2200378106 /* news_video_slider@2x.png */,
+				4A0B5E28274E3E2200378106 /* news_video_slider@3x.png */,
 				4A8C1A012721674A00262457 /* plane.jpg */,
 				4A0DA1582705A7D5000CE946 /* ViewController1.h */,
 				4A0DA1592705A7D5000CE946 /* ViewController1.m */,
@@ -247,6 +290,7 @@
 		4AC551121DD1DBDD00620A07 /* TyunStackDemos */ = {
 			isa = PBXGroup;
 			children = (
+				4A1BBD292759A3F900E89362 /* tableWeb */,
 				4ABEA9542710203200E6F40E /* Gesture */,
 				4A048E0F26E1AE85004297AD /* New Group */,
 				4AF7C9811FEA2A30001DF6BF /* 在线预览 */,
@@ -461,9 +505,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A048E1426E1AEB8004297AD /* ShowColorController.xib in Resources */,
+				4A1BBD2D2759A54800E89362 /* TYWapCell.xib in Resources */,
+				4A788EE927577CBF00DBFE45 /* content1.html in Resources */,
+				4ABF0C452750CAA2008AA4E7 /* content.js in Resources */,
 				4AC551231DD1DBDD00620A07 /* LaunchScreen.storyboard in Resources */,
+				4A0B5E29274E3E2200378106 /* news_video_slider@2x.png in Resources */,
+				4ABF0C472750CAD1008AA4E7 /* video.html in Resources */,
 				4A048E2126E5AADA004297AD /* WebController.xib in Resources */,
+				4ABF0C442750CAA2008AA4E7 /* content.html in Resources */,
 				4A2E90911E2DECCD00D34FE2 /* db_fo_dic.sqlite in Resources */,
+				4A0B5E2A274E3E2200378106 /* news_video_slider@3x.png in Resources */,
 				4A8C1A022721674A00262457 /* plane.jpg in Resources */,
 				4AC551201DD1DBDD00620A07 /* Assets.xcassets in Resources */,
 				4AC5511E1DD1DBDD00620A07 /* Main.storyboard in Resources */,
@@ -532,6 +583,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A1BBD282759A3CB00E89362 /* TYTableWebController.m in Sources */,
 				4AC5511B1DD1DBDD00620A07 /* ViewController.m in Sources */,
 				4A491864216DD3560048599E /* XMYSon.m in Sources */,
 				4AF7C9841FEA2A4E001DF6BF /* TYQuickLookController.m in Sources */,
@@ -546,6 +598,7 @@
 				4A048E2226E5AADA004297AD /* WebController.m in Sources */,
 				4A86A6331FCEA9DA0094F772 /* TYTest2ViewController.m in Sources */,
 				4AF0FA4D1E27518B007294C5 /* AnimOperation.m in Sources */,
+				4ABF0C4127508A4F008AA4E7 /* ViewController3.m in Sources */,
 				4AF7C9871FEA3256001DF6BF /* TYCusQuickViewController.m in Sources */,
 				4A24600A2289630E00B34F6C /* XMYTestTableVC.m in Sources */,
 				4AB83F9E26F1D76F00DCB007 /* GlobalValue.m in Sources */,
@@ -556,6 +609,7 @@
 				4AC549241E763D4B006ACE86 /* TYNetWorking.m in Sources */,
 				4A190AA71DE2A3C3008A9297 /* UIView+XMYExtension.m in Sources */,
 				4A86A62F1FCEA9830094F772 /* TYTest1ViewController.m in Sources */,
+				4A1BBD2E2759A54800E89362 /* TYWapCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

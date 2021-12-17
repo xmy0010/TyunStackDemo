@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <style type="text/css">
+        
+        body,p,h3{
+            margin:0; padding:0;color: #222;}
+        /**
+         * private
+         */
+    #content,
+    #content a { color: #1F58F9; }
+    #content {
+        padding: 0 14px;
+        font-family: Helvetica;
+        font-weight: lighter;
+        line-height: 1.8;
+    }
+    #content a {
+        text-decoration: none;
+        -webkit-tap-highlight-color: transparent;
+    }
+    #content{font-size: %@px;}
+    #content h3 { font-size: %@px; }
+    #content p,
+    #content h3 { margin-bottom: 15px; }
+    #content .text-gray { font-size: %@px; }
+    #content p img{max-width:100%!important;height:auto!important;}
+    
+    
+    /**
+     * public
+     */
+    /* reset */
+    .article-content {
+        text-align: justify;
+        word-wrap: break-word;
+    }
+    
+    /* skin */
+    .article-content a {
+        padding-bottom: 1px;
+        font-weight: bold;
+        border-bottom: 2px solid #1F58F9;
+    }
+    .article-content h3 {
+        padding-left: 10px;
+        line-height: 1.4;
+<!--        border-left: 2px solid #ffde00;-->
+    }
+    
+    #content video {
+        background: #f5f5f5;
+    }
+    
+    /* text */
+    .text-gray { color: #888; }
+    
+    /* box */
+    .box-blue,
+    .box-yellow,
+    .box-green {
+        padding: 8px 12px;
+        border-radius: 5px;
+    }
+    .box-blue   { background-color: #cbf1ff; }
+    .box-yellow { background-color: #fff000; }
+    .box-green  { background-color: #b3ff8d; }
+    
+    </style>
+</head>
+<body><div id="content" class="article-content">
+        <script>
+            %@
+        </script>
+        <section>
+            %@
+            %@
+            <p>
+            %@
+            <a id="videoobjA" href="videoobj|"></a>
+            <a id="imageobjA" href="imageobj|"></a>
+            </p>
+        </section>
+    </div>
+    <script src="%@"></script>
+</body>
+</html>

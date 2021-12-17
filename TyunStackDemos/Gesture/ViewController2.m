@@ -11,6 +11,9 @@
 @interface ViewController2 ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *planeImage;
+@property (weak, nonatomic) IBOutlet UIView *tabBtnsView;
+@property (strong, nonatomic)  UIImageView *line;
+
 
 @end
 
@@ -18,6 +21,54 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self setupTabBtns];
+}
+
+-(void)setupTabBtns {
+    CGFloat btnWidth = 45;
+    CGFloat btnHeight = 25;
+    CGFloat btnSpace = 10;
+    CGFloat totalWidth = 0;
+    UIScrollView *scroll = [[UIScrollView alloc] initWithFrame:_tabBtnsView.bounds];
+    [_tabBtnsView addSubview:scroll];
+    scroll.showsVerticalScrollIndicator = NO;
+    scroll.showsHorizontalScrollIndicator = NO;
+    NSArray *_tabCategorys = @[@"栏目789",@"栏目456",@"栏目123",@"订单",@"23",@"哈哈",@"这样",@"圣诞节看数据的",@"订单",@"23"];
+    UIImageView *line = [[UIImageView alloc] initWithFrame:CGRectMake(0, btnHeight + 3, 15, 3)];
+    line.image = [UIImage imageNamed:@"news_video_slider"];
+    _line = line;
+    [scroll addSubview:line];
+    for (int index = 0; index < _tabCategorys.count; index++) {
+        NSString *model = _tabCategorys[index];
+        CGRect frame = CGRectMake(index * (btnWidth + btnSpace), 0, btnWidth, btnHeight);
+        UIButton *btn = [[UIButton alloc] initWithFrame:frame];
+        [btn setTitle:model forState:UIControlStateNormal];
+        [btn setTitleColor:UIColor.blackColor  forState:UIControlStateNormal];
+
+        btn.titleLabel.font = [UIFont systemFontOfSize:18 weight:UIFontWeightBold];
+        if (index == _tabCategorys.count - 1) {
+            totalWidth = CGRectGetMaxX(frame);
+        }
+        if (index == 0) {
+            CGPoint center = line.center;
+            center.x = btn.center.x;
+            line.center = center;
+        }
+        btn.tag = index;
+        [btn addTarget:self action:@selector(onTabBtn:) forControlEvents:UIControlEventTouchUpInside];
+        [scroll addSubview:btn];
+    }
+    
+    scroll.contentSize = CGSizeMake(totalWidth > _tabBtnsView.frame.size.width ? totalWidth : _tabBtnsView.frame.size.width, _tabBtnsView.frame.size.height);
+}
+- (void)onTabBtn:(UIButton *)sender {
+    NSLog(@"---%ld",sender.tag);
+    [UIView animateWithDuration:0.2 animations:^{
+        CGPoint center = self.line.center;
+        center.x = sender.center.x;
+        self.line.center = center;
+    }];
 }
 
 - (IBAction)onBtnTap:(id)sender {
