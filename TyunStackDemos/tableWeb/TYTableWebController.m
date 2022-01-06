@@ -24,6 +24,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.wapHeight = 1;
     self.table.tableFooterView = [UIView new];
     self.table.delegate = self;
     self.table.dataSource = self;
@@ -52,7 +53,7 @@
     if (indexPath.row == 3) {
         TYWapCell *cell = self.wapCell;
 //        [cell updateCell:@"https://rmt.analytics.cditv.cn/rmt/jinniu/top?openNewWeb=1" isForceUpdate:NO];
-        [cell updateCell:@"https://www.jianshu.com" isForceUpdate:NO];
+        [cell updateCell:@"https://rmt.analytics.cditv.cn/rmt/jinniu/top?openNewWeb=1" isForceUpdate:NO];
 
         return cell;
     } else {

@@ -25,6 +25,7 @@
 		4A2E90911E2DECCD00D34FE2 /* db_fo_dic.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 4A2E90901E2DECCD00D34FE2 /* db_fo_dic.sqlite */; };
 		4A40C6B52701C229006A6B2B /* NullSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A40C6B42701C229006A6B2B /* NullSafe.m */; };
 		4A491864216DD3560048599E /* XMYSon.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A491863216DD3560048599E /* XMYSon.m */; };
+		4A5C37AF27867DB100E3C267 /* YYMenuLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5C37AE27867DB100E3C267 /* YYMenuLabel.m */; };
 		4A788EE927577CBF00DBFE45 /* content1.html in Resources */ = {isa = PBXBuildFile; fileRef = 4A788EE827577CBF00DBFE45 /* content1.html */; };
 		4A86A62F1FCEA9830094F772 /* TYTest1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A86A62E1FCEA9830094F772 /* TYTest1ViewController.m */; };
 		4A86A6331FCEA9DA0094F772 /* TYTest2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A86A6311FCEA9DA0094F772 /* TYTest2ViewController.m */; };
@@ -114,6 +115,8 @@
 		4A40C6B42701C229006A6B2B /* NullSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NullSafe.m; sourceTree = "<group>"; };
 		4A491862216DD3560048599E /* XMYSon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMYSon.h; sourceTree = "<group>"; };
 		4A491863216DD3560048599E /* XMYSon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMYSon.m; sourceTree = "<group>"; };
+		4A5C37AD27867DB100E3C267 /* YYMenuLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYMenuLabel.h; sourceTree = "<group>"; };
+		4A5C37AE27867DB100E3C267 /* YYMenuLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYMenuLabel.m; sourceTree = "<group>"; };
 		4A788EE827577CBF00DBFE45 /* content1.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = content1.html; sourceTree = "<group>"; };
 		4A86A62D1FCEA9830094F772 /* TYTest1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYTest1ViewController.h; sourceTree = "<group>"; };
 		4A86A62E1FCEA9830094F772 /* TYTest1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYTest1ViewController.m; sourceTree = "<group>"; };
@@ -251,6 +254,8 @@
 				4ABEA9562710209D00E6F40E /* GestureView.m */,
 				4A8C1A032721686D00262457 /* ViewController2.h */,
 				4A8C1A042721686D00262457 /* ViewController2.m */,
+				4A5C37AD27867DB100E3C267 /* YYMenuLabel.h */,
+				4A5C37AE27867DB100E3C267 /* YYMenuLabel.m */,
 			);
 			path = Gesture;
 			sourceTree = "<group>";
@@ -610,6 +615,7 @@
 				4A190AA71DE2A3C3008A9297 /* UIView+XMYExtension.m in Sources */,
 				4A86A62F1FCEA9830094F772 /* TYTest1ViewController.m in Sources */,
 				4A1BBD2E2759A54800E89362 /* TYWapCell.m in Sources */,
+				4A5C37AF27867DB100E3C267 /* YYMenuLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

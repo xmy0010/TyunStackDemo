@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#define COLOR_WITH_RGB(r,g,b,a) [UIColor colorWithRed:r / 255.0 green:g / 255.0 blue:b / 255.0 alpha:a]
+
 //typedef NS_OPTIONS(NSUInteger, MyEnum);
 
 typedef enum : NSUInteger {
@@ -37,6 +39,8 @@ static NSString *const onlySelfClassUseString = @"xxxxx";
 #import "XMYSon.h"
 #import "XMYTestTableVC.h"
 #import "WebController.h"
+#import "YYText.h"
+#import "YYMenuLabel.h"
 
 #define VALUE(_INDEX_) [NSValue valueWithCGPoint:points[_INDEX_]]
 
@@ -61,6 +65,7 @@ NSString *const kMyConstString = @"kMyConstString";
 @property (nonatomic, strong) NSMutableArray *m_btnEthinic;
 
 @property (nonatomic, assign) NSInteger count;
+@property (weak, nonatomic) IBOutlet UIView *yyBgView;
 
 //动画完成
 @property (nonatomic, assign) BOOL finished;
@@ -316,7 +321,79 @@ static NSInteger global_static_val = 1; // 静态全局变量
 //    [self testSet];
     
 //    [self MJRefresh];
-    [self testSetterAndGetter];
+//    [self testSetterAndGetter];
+    [self yy_textTest];
+}
+
+#pragma mark YYText 首行缩进
+- (void)yy_textTest {
+    YYLabel *label = [[YYMenuLabel alloc] init];
+    [label setNumberOfLines:0];
+    [label setTextContainerInset:UIEdgeInsetsMake(10, 10, 10, 10)];
+    [label.layer setCornerRadius:18];
+    label.backgroundColor = COLOR_WITH_RGB(222, 222, 222, 1);
+    label.tag = 444333;
+    [self.yyBgView addSubview:label];
+    [label mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(12);
+        make.right.mas_equalTo(12);
+        make.top.mas_equalTo(6);
+        make.bottom.mas_equalTo(0);
+    }];
+    
+    NSString *username = @"唐云";
+    NSString *content = @"真的啥控件的考拉数据的克拉斯觉得考拉加上亏了的就爱看手机打卡斯加大卡就真的啥控件的考";
+    NSAttributedString *emojiContent = [[NSAttributedString alloc] initWithString:content];
+    NSMutableAttributedString *mStr = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@：", username]];
+    [mStr appendAttributedString:emojiContent];
+    
+    [mStr yy_setFont:[UIFont boldSystemFontOfSize:16.f] range:NSMakeRange(0, username.length)];
+    [mStr yy_setFont:[UIFont systemFontOfSize:16.f] range:NSMakeRange(username.length + 1, emojiContent.length)];
+
+    [mStr setYy_color:COLOR_WITH_RGB(145, 149, 154, 1)];
+        
+    NSString *username1 = @"唐三";
+    NSString *content1 = @"哈哈 我是唐三圣诞节阿克苏多久安卡斯加大拉垮";
+    NSAttributedString *emojiContent1 = [[NSAttributedString alloc] initWithString:content1];
+    NSMutableAttributedString *mStr1 = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@：", username1]];
+    [mStr1 appendAttributedString:emojiContent1];
+    [mStr1 yy_setFont:[UIFont boldSystemFontOfSize:13.f] range:NSMakeRange(0, username1.length)];
+    [mStr1 yy_setFont:[UIFont systemFontOfSize:13.f] range:NSMakeRange(username1.length + 1, emojiContent1.length)];
+    [mStr1 setYy_color:COLOR_WITH_RGB(145, 149, 154, 1)];
+    mStr1.yy_firstLineHeadIndent = 26;
+    mStr1.yy_headIndent = 26;
+
+
+    [mStr appendAttributedString:[[NSAttributedString alloc] initWithString:@"\n"]];
+    [mStr appendAttributedString:mStr1];
+    //------------------------------------
+    
+    YYTextContainer *textContainer = [YYTextContainer containerWithSize:CGSizeMake(self.view.bounds.size.width - 24, CGFLOAT_MAX) insets:UIEdgeInsetsMake(10, 10, 10, 10)];
+    YYTextLayout *textLayout = [YYTextLayout layoutWithContainer:textContainer text:mStr];
+    label.attributedText = textLayout.text;
+
+    
+    UIMenuController *menu = [UIMenuController sharedMenuController];
+    UIMenuItem *item = [[UIMenuItem alloc] initWithTitle:@"回复" action:@selector(menuActionReply)];
+    menu.menuItems = @[item];
+    [menu setArrowDirection:UIMenuControllerArrowLeft];
+    
+    __weak typeof(label) weakLabel = label;
+    [label setTextLongPressAction:^(UIView * _Nonnull containerView, NSAttributedString * _Nonnull text, NSRange range, CGRect rect) {
+        
+//        if (range.location > mStr1.length) {
+//            //超过范围
+            rect.origin = weakLabel.center;
+            rect.size = CGSizeMake(0, 0);
+//        }
+        [weakLabel becomeFirstResponder];
+        [menu setTargetRect:weakLabel.bounds inView:weakLabel];
+        [menu setMenuVisible:YES animated:YES];
+    }];
+}
+
+- (void)menuActionReply {
+    NSLog(@"回复");
 }
 
 #pragma mark setter和getter方法与直接访问实例变量

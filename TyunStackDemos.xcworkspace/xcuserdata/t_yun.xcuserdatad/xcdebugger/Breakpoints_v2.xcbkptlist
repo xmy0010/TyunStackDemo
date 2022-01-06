@@ -15,8 +15,8 @@
             timestampString = "584437700.417751"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "700"
-            endingLineNumber = "700"
+            startingLineNumber = "777"
+            endingLineNumber = "777"
             landmarkName = "-presentPicker"
             landmarkType = "7">
          </BreakpointContent>
@@ -32,8 +32,8 @@
             timestampString = "584437700.418345"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "706"
-            endingLineNumber = "706"
+            startingLineNumber = "783"
+            endingLineNumber = "783"
             landmarkName = "-imagePickerController:didFinishPickingMediaWithInfo:"
             landmarkType = "7">
          </BreakpointContent>
@@ -49,8 +49,8 @@
             timestampString = "584437700.418743"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1205"
-            endingLineNumber = "1205"
+            startingLineNumber = "1282"
+            endingLineNumber = "1282"
             landmarkName = "-customSDCycleScrollView"
             landmarkType = "7">
          </BreakpointContent>
@@ -66,8 +66,8 @@
             timestampString = "584437700.419237"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "559"
-            endingLineNumber = "559"
+            startingLineNumber = "636"
+            endingLineNumber = "636"
             landmarkName = "ViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -83,8 +83,8 @@
             timestampString = "584437700.419722"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "571"
-            endingLineNumber = "571"
+            startingLineNumber = "648"
+            endingLineNumber = "648"
             landmarkName = "ViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -100,8 +100,8 @@
             timestampString = "584437700.420131"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "594"
-            endingLineNumber = "594"
+            startingLineNumber = "671"
+            endingLineNumber = "671"
             landmarkName = "ViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -205,22 +205,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "9D6B705E-AC74-4C6A-AC66-E023356DFC5E"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TyunStackDemos/ViewController.m"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "106"
-            endingLineNumber = "106"
-            landmarkName = "-onBtnComplete:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "AE49C668-F859-4E10-8649-72B58632F4B2"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -228,8 +212,8 @@
             filePath = "TyunStackDemos/ViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "195"
-            endingLineNumber = "195"
+            startingLineNumber = "200"
+            endingLineNumber = "200"
             landmarkName = "-callAllMethods:target:"
             landmarkType = "7">
          </BreakpointContent>

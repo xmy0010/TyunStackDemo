@@ -36,18 +36,9 @@
 
 - (void)setWebHeightBlock:(void (^)(CGFloat))webHeightBlock {
     __block typeof(self) weakself = self;
+    _webHeightBlock = webHeightBlock;
     _web.webHeightBlock = ^(CGFloat height) {
-//        if (weakself.webHeight != height) {
-        weakself.webHeight = height;
-            NSLog(@"wap=======%f",height);
-            if (!weakself.refreshHeight) {
-                weakself.refreshHeight = YES;
-                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                    webHeightBlock(height);
-                    weakself.refreshHeight = NO;
-                });
-            }
-//        }
+        weakself.webHeightBlock(height);
     };
 }
 

@@ -8,7 +8,7 @@
 
 #import "ViewController3.h"
 #import <WebKit/WebKit.h>
-
+#import "Masonry.h"
 @interface ViewController3()<WKNavigationDelegate,WKScriptMessageHandler>
 
 @property (nonatomic,strong) WKWebView *web;
@@ -40,6 +40,11 @@
     web.navigationDelegate = self;
     web.backgroundColor = [UIColor redColor];
     self.web = web;
+    [self.view addSubview:web];
+
+    [web mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(self.view);
+    }];
     
 //    web.scrollView.scrollEnabled = NO;
 //    [web.scrollView addObserver:self forKeyPath:@"contentSize" options:NSKeyValueObservingOptionNew context:nil];
@@ -47,7 +52,6 @@
 //    web.mediaPlaybackRequiresUserAction
     
 //    UIWebView *web = [[UIWebView alloc] initWithFrame:self.view.bounds];
-      [self.view addSubview:web];
 //      web.allowsInlineMediaPlayback = YES;
 //      web.delegate = self;
 //      self.web = web;
@@ -75,8 +79,8 @@
                            @"",
                            @""];
     NSString *webContentStr = contentStr;
-    [web loadHTMLString:webContentStr baseURL:[NSURL fileURLWithPath:[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) objectAtIndex:0]]];
-//    [web loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://rmt.analytics.cditv.cn/rmt/jinniu/top?openNewWeb=1"]]];
+//    [web loadHTMLString:webContentStr baseURL:[NSURL fileURLWithPath:[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) objectAtIndex:0]]];
+    [web loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://rmt.analytics.cditv.cn/rmt/jinniu/top?openNewWeb=1"]]];
 
 }
 
@@ -90,16 +94,16 @@
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
-    if ([keyPath isEqualToString:@"contentSize"]) {
-        UIScrollView *scoll = (UIScrollView *)object;
-        CGFloat height = scoll.contentSize.height;
-        NSLog(@"==========scroll==%f",scoll.contentSize.height);
-//        self.web.frame = CGRectMake(0, 0, self.view.frame.size.width, height);
-        if (self.webHeightBlock) {
-            [self loadHeight];
-            self.webHeightBlock(height);
-        }
-    }
+//    if ([keyPath isEqualToString:@"contentSize"]) {
+//        UIScrollView *scoll = (UIScrollView *)object;
+//        CGFloat height = scoll.contentSize.height;
+//        NSLog(@"==========scroll==%f",scoll.contentSize.height);
+////        self.web.frame = CGRectMake(0, 0, self.view.frame.size.width, height);
+//        if (self.webHeightBlock) {
+//            [self loadHeight];
+//            self.webHeightBlock(height);
+//        }
+//    }
 }
 
 //- (void)userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message {
@@ -131,13 +135,15 @@
 
 // 执行顺序5 (页面加载完成)
 - (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation {
-//    [webView evaluateJavaScript:@"document.body.offsetHeight" completionHandler:^(id height, NSError * _Nullable error) {
-//        NSLog(@"%@", height);
-//    }];
-//    NSInteger height = [[webView stringByEvaluatingJavaScriptFromString:@"document.body.scrollHeight"] integerValue];
-//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//        [self loadHeight];
-//    });
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        self.webHeightBlock(300);
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            self.webHeightBlock(600);
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                self.webHeightBlock(400);
+            });
+        });
+    });
 }
 
 // 执行顺序5（页面加载失败）

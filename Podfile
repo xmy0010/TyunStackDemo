@@ -10,6 +10,9 @@ pod 'MJRefresh'
 pod 'Masonry'
 pod 'QMUIKit'
 pod 'IQKeyboardManager'
+pod 'YYText', '<= 1.0.7.100'
+
+
 
 #pod 'Reveal-iOS-SDK', :configurations => ['Debug']
 
